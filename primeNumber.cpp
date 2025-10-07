@@ -2,17 +2,27 @@
 using namespace std;
 
 int main(){
+
     int number;
-    cout << "Please Enter a Number: " <<"\n";
+
+    cout << "Please enter a number: " << endl;
+
     cin >> number;
-    if (number<=1)
-    cout << "Your number is not a Prime Number..";
-    for (int i=2 ; i*i<=number ; i++){
-        if (number % i == 0){
-        cout << "Your Number is not a Prime Number..";
-        return 0;
-    }
-    }
-    cout << "Your Number is a Prime Number..";
+
+    if (number <= 1){
+    cout << "Your number is not a prime number." << endl;
     return 0;
+
+    }
+
+    for (int i = 2; i * i <= number; i++){
+        if (number % i == 0){
+            cout << "Your number is not a prime number." << endl;
+            return 0;
+        }
+    }
+    
+    cout << "Your number is a prime number." << endl;
+    return 0;
+
 }
