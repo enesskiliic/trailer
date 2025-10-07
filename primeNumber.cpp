@@ -10,10 +10,9 @@ int main(){
     for (int i=2 ; i*i<=number ; i++){
         if (number % i == 0){
         cout << "Your Number is not a Prime Number..";
-        break;}
-    else{
-    cout << "Your number is a Prime Number..";
-    break;
+        return 0;
     }
     }
+    cout << "Your Number is a Prime Number..";
+    return 0;
 }
